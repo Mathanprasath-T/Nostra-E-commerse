@@ -1,0 +1,258 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    /* to use box shadow we go to css box shadow website */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.navbar-links ol {
+    display: flex;
+    /* to use this for ---- to --  --  */
+    column-gap: 20px;
+    /* to use this to avoid that 123 lines */
+    list-style: none;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #1d232c;
+    ;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+    color: #1d232c;
+}
+
+.navbar-menu-toggle {
+    display: none;
+}
+
+.side-navbar {
+    background-color: #1d232c;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: 2s;
+
+
+}
+
+.side-navbar-links ol {
+    list-style: none;
+}
+
+.side-navbar-links ol li {
+    margin-bottom: 30px;
+}
+
+.side-navbar-links ol a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.side-navbar-links ol a:hover {
+    text-decoration: underline;
+
+}
+
+/* header */
+.header{
+    display: flex;
+    justify-content: center;
+   gap: 50px;
+   padding: 50px;
+}
+.header-button{
+    background-color: #1d232c;
+    color: white;
+    padding-left: 20px;
+padding-bottom: 10px;
+padding-right: 20px;
+padding-top: 10px;
+margin: 10px;
+cursor: pointer;
+}
+
+/* service section */
+
+.service{
+    padding: 10px;
+}
+.service-container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-container-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.service-container-2 div{
+    background-color:#F2F4F7;
+    border-radius: 5px;
+    padding: 10px;
+}
+.new-arrival{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+   
+}
+.new-arrival-container{
+    position: relative;
+    flex-basis: 20%;
+    padding: 10px;
+  
+}
+.new-arrival button{
+    padding-left: 10%;
+    padding-bottom: 5%;
+    padding-right: 10%;
+    padding-top: 5%;
+    margin-top: 10px;
+    color: #1d232c;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    border-radius:10px ;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.news input{
+    padding: 10px;
+    border: #1d232c 3px solid;
+    width: 80vw;
+    margin-bottom: 10px;
+
+}
+.news button{
+    background-color: #1d232c;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.footer-container{
+    margin-top: 20px;
+    background-color: #1d232c;
+    color: white;
+    padding: 40px;
+}
+
+/* collection html in product section */
+
+.product-search{
+ 
+    margin-top: 20px;
+    width: 80%;
+    border: #1d232c 2px solid;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+}
+.products{
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+}
+.product1{
+    text-align: center;
+    flex-basis: 20%;
+}
+.product1 img{
+    border-radius: 10px;
+}
+.contact-page{
+    width: 70%;
+    background-color: #1d232c;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 60px auto;
+
+}
+.contact-page h2{
+    margin-bottom: 30px;
+}
+.contact-page label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.contact-page input,.contact-page textarea{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+.contact-page textarea{
+    height: 120px;
+    resize: none;
+}.contact-page button{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* media query */
+@media screen and (max-width:700px) {
+    .navbar-menu-toggle {
+        display: block;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+    .header-image1{
+        display: none;
+    }
+    .service-container-1{
+       display: none;
+}
+    .service-container-2{
+        flex-direction:column;
+    }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- to use font font-awesome lin we use awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- nav bar -->
+   <!-- nav bar -->
+   <nav class="navbar">
+      <h1>Nostra</h1>
+
+      <div class="navbar-links">
+         <ol>
+            <li><a class="navbar-link" href="index.html">Home</a></li>
+            <li><a class="navbar-link" href="Collection.html">Collections</a></li>
+            <li><a class="navbar-link" href="contact.html">Contacts</a></li>
+         </ol>
+      </div>
+      <!-- it is that three lines in right corner -->
+      <div class="navbar-menu-toggle" onclick="showNavbar()">
+         <!-- font from awesome to use normal font awesome website-->
+         <i class="fa-solid fa-bars"></i>
+      </div>
+   </nav>
+   <!-- side navbar -->
+   <div class="side-navbar">
+      <p style="text-align: right;">
+         <i onclick="closeNavbar()" class="fa-solid fa-xmark"></i>
+      </p>
+      <div class="side-navbar-links">
+         <ol>
+            <li><a class="side-navbar-link" href="index.html">Home</a></li>
+            <li><a class="side-navbar-link" href="Collection.html">Collections</a></li>
+            <li><a class="side-navbar-link" href="contact.html">Contacts</a></li>
+         </ol>
+
+      </div>
+   </div>
+    <!-- contact page -->
+     <div class="contact-page">
+        <h2>Contact Us</h2>
+    <label>Name:</label>
+        <input type="text" placeholder="Enter your name">
+        <label>Email</label>
+        <input type="text" placeholder="Enter your Email">
+        <label>Messase</label>
+        <textarea placeholder="Enter your message"></textarea> 
+        <button onclick="submit(event)" class="submit1">Submit</button>
+     </div>
+
+
+    <!-- footer section -->
+    <div class="footer-container">
+        <div class="footer-box-1">
+            <h2 class="healingText">Nostra</h2>
+            <p>Step into confidence with styles made to empower you.
+                At Nostra, every outfit tells your story.</p>
+            <div class="footer-icon-container">
+                <i class="fa-brands fa-instagram" style="color: white;"></i>
+                <i class="fa-brands fa-youtube" style="color: white;"></i>
+                <i class="fa-brands fa-whatsapp" style="color: white;"></i>
+
+
+            </div>
+        </div>
+        <p>@ 2026 Nostra.com</p>
+    </div>
+
+  
+<script src="script.js"></script>
+      <script src="collection.js"></script>
+         <script src="contact.js"></script>
+</body>
+
+</html> 
