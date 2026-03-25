@@ -54,17 +54,20 @@
       </div>
    </div>
     <!-- contact page -->
-     <div class="contact-page">
-        <h2>Contact Us</h2>
-    <label>Name:</label>
-        <input type="text" placeholder="Enter your name">
-        <label>Email</label>
-        <input type="text" placeholder="Enter your Email">
-        <label>Messase</label>
-        <textarea placeholder="Enter your message"></textarea> 
-        <button  class="submit1">Submit</button>
-     </div>
+<div class="contact-page">
+    <h2>Contact Us</h2>
 
+    <label>Name:</label>
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <label>Email</label>
+    <input type="text" id="email" placeholder="Enter your Email">
+
+    <label>Messase</label>
+    <textarea id="message" placeholder="Enter your message"></textarea> 
+
+    <button class="submit1">Submit</button>
+</div>
 
     <!-- footer section -->
     <div class="footer-container">
@@ -84,10 +87,10 @@
     </div>
 
   
-         <script src="contact.js"></script>
-    <script src="script.js"></script>
+
+         <script type="module" src="contact.js"></script>
+          <script src="script.js"></script>
+          <script type="module" src="firebase.js"></script>
 </body>
 
-
 </html> 
-
